@@ -1,0 +1,303 @@
+/* ******** start header *********** */
+header {
+  background-image: url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+/* ******** start navbar ************ */
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+header .navbar .logo h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+header .navbar .logo h2 span {
+  color: var(--mainColor);
+}
+header .navbar nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .navbar nav ul li {
+  margin-left: 10px;
+}
+header .navbar nav ul li a {
+  padding: 10px;
+  text-transform: var(--capitalize);
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+header .navbar nav ul li a:hover,
+header .navbar nav ul li.active a {
+  background-color: var(--mainColor);
+}
+
+/* ******** End navbar ************ */
+
+/* ******** start slider ********** */
+.slider {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  -webkit-transform: translate(-50%, -60%);
+  -moz-transform: translate(-50%, -60%);
+  -ms-transform: translate(-50%, -60%);
+  -o-transform: translate(-50%, -60%);
+  color: #fff;
+}
+.slider h1 {
+  font-size: 55px;
+  font-weight: 500;
+}
+.slider p {
+  line-height: var(--lineHeight);
+  margin: 0 0 30px 0;
+}
+.slider a {
+  background-color: var(--mainColor);
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  text-transform: var(--capitalize);
+  font-size: 18px;
+}
+.slider a:hover {
+  background-color: transparent;
+}
+
+/* ******** End slider ********** */
+
+/* ******** End header *********** */
+
+/* ********** start about ********** */
+.about .about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.about .home-section {
+  text-align: left;
+}
+.about .home-section p:last-of-type {
+  margin: 30px 0;
+}
+.about .about-grid .about-image img {
+  width: 100%;
+}
+/* ********** End about ********** */
+
+/* ********* start our menu ************ */
+
+.our-menu .content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.our-menu .info {
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  padding: 25px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow: hidden;
+}
+.our-menu .info:hover img {
+  transform: scale3d(1.1,1.1,1.1);
+  -webkit-transform: scale3d(1.1,1.1,1.1);
+  -moz-transform: scale3d(1.1,1.1,1.1);
+  -ms-transform: scale3d(1.1,1.1,1.1);
+  -o-transform: scale3d(1.1,1.1,1.1);
+}
+.image-portoflio img {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.our-menu .info h4 {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--pargraph) 
+}
+/* ********* ENd our menu ************ */
+
+/* ********** start our kitchen team *********** */
+.kitchen {
+  padding-bottom: 100px;
+}
+.image-kitchen {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.image-kitchen > div {
+  height: 300px
+}
+.image-kitchen > div .image-item {
+  height: 100%;
+}
+.image-kitchen > div h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+/* ********** end our kitchen team *********** */
+
+/* *********** start testimonials ************* */
+.testimonials .home-section {
+  margin-top: 50px;
+  
+}
+.testimonials .home-section h2, 
+  .testimonials .home-section p {
+  color: #fff !important;
+
+}
+.testimonials {
+  background-image: url('../images/pic5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  height: 600px
+
+}
+
+.testimonial-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+.testimonial-content .testimonial-item {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.testimonials img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+}
+.testimonial-content .testimonial-item p {
+  font-style: italic;
+  color: var(--pargraph);
+  text-transform: var(--capitalize)
+}
+
+.testimonial-content .testimonial-item span {
+  color: var(--mainColor);
+  padding-top: 10px;
+  display: block;
+  text-transform: var(--capitalize);
+}
+/* *********** End testimonials ************* */
+
+
+/* ************* start contact ************* */
+
+
+.contact .contact-item {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 60px
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px ;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+form #text {
+  margin-bottom: 20px;
+  padding: 7px;
+  border-radius: 5px;
+  outline: 0;
+  border: 1px solid #999;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+form h4 {
+  margin-bottom: 20px;
+}
+form textarea#text {
+  height: 150px;
+  resize: none;
+}
+form button{
+  width:140px;
+  padding: 10px;
+  border-radius:5px;
+  border: 0;
+  outline: 0;
+  background-color: var(--mainColor);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -o-border-radius:5px;
+  -webkit-border-radius:5px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px 
+}
+/* ************* End contact ************* */
+
+/* *************** start footer ************* */
+
+footer {
+  padding: 20px;
+  border-top: 1px solid #999
+}
+footer p span {
+  color: var(--mainColor);
+}
+
+/* *************** End footer ************* */

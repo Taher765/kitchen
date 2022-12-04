@@ -1,0 +1,111 @@
+/* *************** start coman ************* */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* *************** End coman ************* */
+
+/* ********* start body ************ */
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* ************ End body ************** */
+
+/* *********** start overlay ********* */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+/* *********** End overlay ********* */
+
+/* *********** start Home section ***********  */
+.home-section {
+  text-align: center;
+}
+.home-section h2 {
+  text-transform: var(--capitalize);
+  position: relative;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 35px;
+  color: var(--headingColor);
+  margin-bottom: 30px;
+}
+.home-section h2:after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: var(--mainColor);
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+  -moz-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  -o-transform: translatex(-50%);
+}
+.home-section p:first-of-type {
+  line-height: var(--lineHeight);
+  color: var(--pargraph);
+  margin-bottom: 50px;
+}
+/* ******** End Home section *********** */
+
+/* ************ start my framework ************* */
+
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  border-radius: 5px;
+  border: 1px solid var(--mainColor);
+  padding: 10px 30px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pd-y {
+  padding: 60px 0;
+}
+
+/* ************ End framework ************* */
+
+/* ********** start variables ********* */
+
+:root {
+  --mainColor: #fe1493;
+  --headingColor: #3c404d;
+  --pargraph: #666;
+  --lineHeight: 1.6;
+  --textCenter: center;
+  --capitalize: capitalize;
+  --upperCase: uppercase;
+}
+
+/* ************ End variables ************ */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
